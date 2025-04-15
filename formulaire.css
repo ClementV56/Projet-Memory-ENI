@@ -10,8 +10,8 @@ h1 {
 #menu {
 	background: #7a1212;
 	height: 45px;
-	border-radius: 10px;
 }
+
 #menu ul, #menu li {
 	margin: 0 auto;
 	padding: 0;
@@ -64,8 +64,6 @@ h1 {
 @media screen and (max-width: 800px){
 	#menu {position:relative}
 	#menu ul {background:#7a1212;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:30px;}
 	#menu li {display:block;float:none;width:auto;}
 	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
 	#menu input {z-index:4}
@@ -77,4 +75,27 @@ h1 {
 #cadrePrincipal {
     border-style: none;
     background-color: #2935a1;
+	display: left ;
+	flex-direction: column;
+	justify-content: center ;
+	align-items: center;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 30px;
+	padding: 20px;
 }
+
+#menu{
+	border-style: none;
+	position: left ;
+	justify-content: space-evenly;
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+}
+
+img{
+	width: 50%;
+}
+

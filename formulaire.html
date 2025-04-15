@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil - Memory ENI</title>
-    <link rel="stylesheet" href="formulaire.css">
-</head>
-<body>
-    <h1>ENI - MEMORY - Accueil </h1>
+    <link rel="stylesheet" href="formulaire.css" />
+  </head>
+  <body>
+    
+    <header>
+      <h1>ENI - MEMORY - Accueil</h1>
+      <nav id="menu">
+        <input id="responsive-menu" onclick="updatemenu()" /><label></label>
+        <ul>
+          <li><a href="formulaire.html">Accueil</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+          <li><a href="connection.html">Se connecter</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <br>
 
     <main>
-        <nav id='menu'>
-            <input id='responsive-menu' onclick='updatemenu()'><label></label>
-            <ul>
-              <li><a href="formulaire.html">Accueil</a></li>
-              <li><a href="inscription.html">S'inscrire</a></li>
-              <li><a href="connection.html">Se connecter</a></li>
-              <li><a href="profil.html">Profil</a></li>
-              <li><a href="jouer.html">Jouer</a></li>
-            </ul>
-          </nav>
-
-        <article id="cadrePrincipal">
-            <p>Bienvenue sur le site du Memory de l'ENI.</p>
-            <p>Venez jouer avec nous et faites le meilleur score possible.</p>
-            <br>
-            <h2>Règles du jeu :</h2>
-            <br>
-            <ul>
-                <li>Retournez deux cartes. Si les images sont identiques, le jeu laisse les cartes visibles.</li>
-                <li>Si les images sont différentes, les cartes se retournent faces cachées là où elles étaient.</li>
-                <li>La partie est terminée lorsque toutes les cartes ont été assemblées par paires.</li>
-            </ul>
-            <img src="ressources1/memory-legume/memory_detail.png" alt="Fruits et Légumes" title="Exemple de plateau de memory">
-            <p>Si vous voulez vous souvenir de votre score. Inscrivez-vous via le formulaire.</p>
-            <p>Le jeu garde les 5 meilleurs scores.</p>
-            <p>Si vous relancez une partie cliquez sur la barre d'espace.</p>
-            
-        </article>
+      <section id="cadrePrincipal">
+        <p>Bienvenue sur le site du Memory de l'ENI.</p>
+        <p>Venez jouer avec nous et faites le meilleur score possible.</p>
+        <br />
+        <h2>Règles du jeu :</h2>
+        <br />
+        <ul>
+          <li>
+            Retournez deux cartes. Si les images sont identiques, le jeu laisse
+            les cartes visibles.
+          </li>
+          <li>
+            Si les images sont différentes, les cartes se retournent faces
+            cachées là où elles étaient.
+          </li>
+          <li>
+            La partie est terminée lorsque toutes les cartes ont été assemblées
+            par paires.
+          </li>
+        </ul>
+        <img
+          src="ressources1/memory-legume/memory_detail.png"
+          alt="Fruits et Légumes"
+          title="Exemple de plateau de memory"
+        />
+        <p>
+          Si vous voulez vous souvenir de votre score. Inscrivez-vous via le
+          formulaire.
+        </p>
+        <p>Le jeu garde les 5 meilleurs scores.</p>
+        <p>Si vous relancez une partie cliquez sur la barre d'espace.</p>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>

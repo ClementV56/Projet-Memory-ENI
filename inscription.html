@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="inscription.css">
 </head>
 <body>
-    <h1>ENI - MEMORY - S'inscrire </h1>
+
+    <header>
+        <h1>ENI - MEMORY - S'inscrire </h1>
+        <nav id='menu'>
+                <input id='responsive-menu' onclick='updatemenu()'><label></label>
+                <ul>
+                <li><a href="formulaire.html">Accueil</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="connection.html">Se connecter</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="jouer.html">Jouer</a></li>
+                </ul>
+        </nav>
+    </header>
+    
+    <br>
 
     <main>
-        <nav id='menu'>
-            <input id='responsive-menu' onclick='updatemenu()'><label></label>
-            <ul>
-              <li><a href="formulaire.html">Accueil</a></li>
-              <li><a href="inscription.html">S'inscrire</a></li>
-              <li><a href="connection.html">Se connecter</a></li>
-              <li><a href="profil.html">Profil</a></li>
-              <li><a href="jouer.html">Jouer</a></li>
-            </ul>
-          </nav>
-
+        
         <section id="cadreInscrire">
             <h3>Inscrivez-vous.</h3>
             <h4>Nom d'utilisateur</h4>
@@ -34,6 +39,7 @@
         
             <br>
             <br>
+        <div class="boutons">
 
             <button>
                 Création du compte
@@ -42,6 +48,7 @@
             <button>
                 Annuler
             </button>
+        </div>
         </section>
     </main>
 
