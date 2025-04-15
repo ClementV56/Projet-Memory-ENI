@@ -74,7 +74,7 @@ h1 {
 	#menu input:checked ~ ul {display:block}
 }
 
-#cadrePrincipal {
+#cadreInscrire {
     border-style: none;
     background-color: #2935a1;
 }

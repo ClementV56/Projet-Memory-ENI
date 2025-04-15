@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Memory - ENI</title>
+    <link rel="stylesheet" href="profil.css">
+
+</head>
+<body>
+    <h1>ENI - MEMORY - Profil </h1>
+
+    <main>
+        <nav id='menu'>
+            <input id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="formulaire.html">Accueil</a></li>
+              <li><a href="inscription.html">S'inscrire</a></li>
+              <li><a href="connection.html">Se connecter</a></li>
+              <li><a href="profil.html">Profil</a></li>
+              <li><a href="jouer.html">Jouer</a></li>
+            </ul>
+          </nav>
+
+          <section id="cadreProfil">
+            <h3>Profil</h3>
+            <h4>Nom d'utilisateur</h4>
+            <input type="text" id="nom" name="nom" autofocus required placeholder="Votre nom d'utilisateur" pattern="[A-Za-z]{3,}" title="Saisissez votre nom utilisateur">
+            <h4>Entrez votre email</h4>
+            <input type="email" id="email" name="email" autofocus required placeholder="Votre email" title="Saisissez votre adresse email">
+            
+            <h4>Choix du Memory</h4>
+            <input type="text" list="listeChoix" name="liste" id="liste">
+            <datalist id="listeChoix">
+                <option value="Memory01" selected>Animaux animés</option>
+                <option value="Memory02">Memory 2</option>
+                <option value="Memory03">Memory 3</option>
+                <option value="Memory04">Memory 4</option>
+            </datalist>
+
+            <img src="" alt="">
+
+            <h4>Taille du Memory</h4>
+            <input type="text" list="listeTaille" name="liste" id="liste">
+            <datalist id="listeTaille">
+                <option value="Taille01" selected>4*3</option>
+                <option value="Taille02">13*9</option>
+                <option value="Taille03">Taille03</option>
+                <option value="Taille04">Taille04</option>
+            </datalist>
+           
+            <br>
+            <br>
+
+            <button>
+                Enregistrez Option
+            </button>
+
+            <array>
+
+            </array>
+
+          </section>
+</body>
+</html>

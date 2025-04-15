@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripton - Memory ENI</title>
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+    <h1>ENI - MEMORY - S'inscrire </h1>
+
+    <main>
+        <nav id='menu'>
+            <input id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="formulaire.html">Accueil</a></li>
+              <li><a href="inscription.html">S'inscrire</a></li>
+              <li><a href="connection.html">Se connecter</a></li>
+              <li><a href="profil.html">Profil</a></li>
+              <li><a href="jouer.html">Jouer</a></li>
+            </ul>
+          </nav>
+
+        <section id="cadreInscrire">
+            <h3>Inscrivez-vous.</h3>
+            <h4>Nom d'utilisateur</h4>
+            <input type="text" id="nom" name="nom" autofocus required placeholder="Votre nom" pattern="[A-Za-z]{3,}" title="Saisissez votre nom (3 caractères minimum)">
+            <h4>Entrez votre email</h4>
+            <input type="email" id="email" name="email" autofocus required placeholder="Votre email" title="Saisissez votre adresse email">
+            <h4>Mot de passe</h4>
+            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.">
+            <h4>Confirmez le mot de passe</h4>
+            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Confirmez le mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Resaisissez votre mot de passe">
+        
+            <br>
+            <br>
+
+            <button>
+                Création du compte
+            </button>
+
+            <button>
+                Annuler
+            </button>
+        </section>
+    </main>
+
+</body>
+</html>

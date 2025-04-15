@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection - Memory - ENI</title>
+    <link rel="stylesheet" href="connection.css">
+</head>
+<body>
+    <h1>ENI - MEMORY - Connecter </h1>
+
+    <main>
+        <nav id='menu'>
+            <input id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="formulaire.html">Accueil</a></li>
+              <li><a href="inscription.html">S'inscrire</a></li>
+              <li><a href="connection.html">Se connecter</a></li>
+              <li><a href="profil.html">Profil</a></li>
+              <li><a href="jouer.html">Jouer</a></li>
+            </ul>
+          </nav>
+
+          <section id="cadreConnecter">
+            <h3>Connectez-vous.</h3>
+            <h4>Entrez votre email</h4>
+            <input type="email" id="email" name="email" autofocus required placeholder="Votre email : exemple sarah@connor.fr" title="Saisissez votre adresse email">
+            <h4>Mot de passe</h4>
+            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.">
+        
+            <br>
+            <br>
+
+            <button>
+                Se connecter
+            </button>
+
+            <button>
+                Annuler
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>
