@@ -10,6 +10,13 @@ h1 {
 #menu {
 	background: #7a1212;
 	height: 45px;
+	border-style: none;
+	position: left ;
+	justify-content: space-evenly;
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
 }
 
 #menu ul, #menu li {
@@ -72,6 +79,11 @@ h1 {
 	#menu input:checked ~ ul {display:block}
 }
 
+#image_accueil{
+	width: 50%;
+	padding-left: 150px;
+}
+
 #cadrePrincipal {
     border-style: none;
     background-color: #2935a1;
@@ -82,20 +94,9 @@ h1 {
 	width: 70%;
 	margin: 0 auto;
 	border-radius: 30px;
-	padding: 20px;
+	padding: 20px;	
 }
 
-#menu{
-	border-style: none;
-	position: left ;
-	justify-content: space-evenly;
-	display: inline-block;
-	flex-direction: column;
-	align-items: center;
-	text-align: left;
+section{
+	color: white;
 }
-
-img{
-	width: 50%;
-}
-

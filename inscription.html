@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscripton - Memory ENI</title>
     <link rel="stylesheet" href="inscription.css">
-    <script src="inscription.js"></script>
+    <script defer src="inscription.js"></script>
 
 </head>
 <body>
@@ -35,34 +35,45 @@
                 <form action="" method="post">
             <div>
             <label for="nom"><h4>Nom d'utilisateur</h4></label>
-            <input type="text" id="nom" name="nom" autofocus required placeholder="Votre nom" pattern="[A-Za-z]{3,}" title="Saisissez votre nom (3 caractères minimum)">
-            <img src="ressources1/check.svg" alt="Coche Vert" id="check">
-            <img src="ressources1/error.svg" alt="Coche Rouge" id="error">
-            
+            <input type="text" id="nom" name="nom" autofocus required placeholder="Votre nom" pattern="[A-Za-z]{3,}" title="Choisissez un pseudo contenant au moins 3 caractères.">
+            <img src="ressources1/check.svg" alt="Coche Vert" id="checkNom" class="coche">
+            <img src="ressources1/error.svg" alt="Coche Rouge" id="errorNom" class="coche">
+            <ul id="nbCaracteres">Choisissez un pseudo contenant au moins 3 caractères.</li>
+
             </div>
 
             <br>
             <br>
 
             <div>
-            <label for="email"></label><h4>Entrez votre email</h4></label>
-            <input type="email" id="email" name="email" autofocus required placeholder="Votre email" title="Saisissez votre adresse email">
+                <label for="email"></label><h4>Entrez votre email</h4></label>
+                <input type="email" id="email" name="email" required placeholder="Votre email" title="Saisissez votre adresse email">
+                <img src="ressources1/check.svg" alt="Coche Vert" id="checkEmail" class="coche">
+                <img src="ressources1/error.svg" alt="Coche Rouge" id="errorEmail" class="coche">
             </div>
 
             <br>
             <br>
 
             <div>
-            <label for="password"><h4>Mot de passe</h4></label>
-            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Au moins un symbole, un chiffre, une majuscule ainsi que 6 caractères minimum">
+                <label for="password"><h4>Mot de passe</h4></label>
+                <input type="password" id="password" name="password" required placeholder="Votre mot de passe" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Saisissez un mot de passe contenant au moins un symbole, un chiffre, une majuscule ainsi que 6 caractères minimum.">
+                <img src="ressources1/check.svg" alt="Coche Vert" id="checkPassword" class="coche">
+                <img src="ressources1/error.svg" alt="Coche Rouge" id="errorPassword" class="coche">
+                <meter id="password-strength" min="0" max="4" value="0"></meter>
+                <p id="password-strength-text"></p>
             </div>
 
             <br>
             <br>
 
             <div>
-            <label for="password"><h4>Confirmez le mot de passe</h4></label>
-            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Confirmez le mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Resaisissez votre mot de passe">
+                <label for="password"><h4>Confirmez le mot de passe</h4></label>
+                <input type="password" id="passwordVerif" name="passwordVerif" required placeholder="Votre mot de passe"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Resaisissez votre mot de passe">
+                <img src="ressources1/check.svg" alt="Coche Vert" id="checkPassword2" class="coche">
+                <img src="ressources1/error.svg" alt="Coche Rouge" id="errorPassword2" class="coche">
             </div>
 
             <br>

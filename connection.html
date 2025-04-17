@@ -28,21 +28,26 @@
         
           <section id="cadreConnecter">
             <h3>Connectez-vous.</h3>
-            <h4>Entrez votre email</h4>
-            <input type="email" id="email" name="email" autofocus required placeholder="Votre email : exemple sarah@connor.fr" title="Saisissez votre adresse email">
-            <h4>Mot de passe</h4>
-            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.">
-        
-            <br>
-            <br>
 
-            <button>
-                Se connecter
-            </button>
+            <fieldset>
+                <h4>Entrez votre email</h4>
+                <input type="email" id="email" name="email" autofocus required placeholder="Votre email : exemple sarah@connor.fr" title="Saisissez votre adresse email">
+                <h4>Mot de passe</h4>
+                <input type="password" id="mdp" name="mdp" required placeholder="Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.">
+            
+                <br>
+                <br>
+        <div class="boutons">
 
-            <button>
-                Annuler
-            </button>
+                <button>
+                    Se connecter
+                </button>
+
+                <button>
+                    Annuler
+                </button>
+            </fieldset>
+        </div>
         </section>
 
     </main>

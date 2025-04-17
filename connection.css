@@ -7,6 +7,11 @@ h1 {
     text-align: center;
 }
 
+h3 {
+	text-align: center;
+	color: white;
+  }
+
 #menu {
 	background: #7a1212;
 	height: 45px;
@@ -93,3 +98,41 @@ h1 {
 	align-items: center;
 	text-align: left;
 }
+
+section{
+	color: white;
+}
+
+fieldset {
+	border: #2935a1;
+  
+	h4 {
+	  color: white;
+	}
+  
+	input {
+	  padding-right: 400px;
+	  background-color: #2935a1;
+	  border: none;
+	  border-bottom: 2px solid white;
+	}
+}
+
+#email {
+    color: white;
+	padding-right: 400px;
+  }
+
+  #mdp {
+    color: white;
+  }
+  
+  .boutons {
+	display: flex;
+	justify-content: space-evenly;
+  }
+  button {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
