@@ -9,6 +9,7 @@ h1 {
 
 h3{
 	text-align: center;
+	color: white;
 }
 
 #menu {
@@ -86,6 +87,7 @@ h3{
 	margin: 0 auto;
 	border-radius: 30px;
 	padding: 20px;
+
 }
 
 #menu{
@@ -101,5 +103,49 @@ h3{
 .boutons{
 	display: flex;
 	justify-content: space-evenly;
+	
 }
 
+fieldset{
+	border: #2935a1;
+
+h4{
+	color: white;
+}
+
+input{
+	padding-right: 400px;
+	background-color: #2935a1;
+	border: none;
+	border-bottom: 2px solid white ;
+}
+
+#nom{
+	color: white;
+}
+
+#email{
+	color: white;
+}
+
+#mdp{
+	color: white;
+}
+
+button{
+	padding-left: 25px;
+	padding-right: 25px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+}
+
+#check {
+	width: 25px;
+	display: none;
+}
+
+#error{
+	width: 25px;
+	display: none;
+
+}

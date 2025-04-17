@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscripton - Memory ENI</title>
     <link rel="stylesheet" href="inscription.css">
+    <script src="inscription.js"></script>
+
 </head>
 <body>
 
@@ -28,26 +30,59 @@
         
         <section id="cadreInscrire">
             <h3>Inscrivez-vous.</h3>
-            <h4>Nom d'utilisateur</h4>
+
+            <fieldset>
+                <form action="" method="post">
+            <div>
+            <label for="nom"><h4>Nom d'utilisateur</h4></label>
             <input type="text" id="nom" name="nom" autofocus required placeholder="Votre nom" pattern="[A-Za-z]{3,}" title="Saisissez votre nom (3 caractères minimum)">
-            <h4>Entrez votre email</h4>
+            <img src="ressources1/check.svg" alt="Coche Vert" id="check">
+            <img src="ressources1/error.svg" alt="Coche Rouge" id="error">
+            
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+            <label for="email"></label><h4>Entrez votre email</h4></label>
             <input type="email" id="email" name="email" autofocus required placeholder="Votre email" title="Saisissez votre adresse email">
-            <h4>Mot de passe</h4>
-            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.">
-            <h4>Confirmez le mot de passe</h4>
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+            <label for="password"><h4>Mot de passe</h4></label>
+            <input type="password" id="mdp" name="mdp" autofocus required placeholder="Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Au moins un symbole, un chiffre, une majuscule ainsi que 6 caractères minimum">
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+            <label for="password"><h4>Confirmez le mot de passe</h4></label>
             <input type="password" id="mdp" name="mdp" autofocus required placeholder="Confirmez le mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Resaisissez votre mot de passe">
-        
+            </div>
+
             <br>
             <br>
+            <br>
+            <br>
+
         <div class="boutons">
 
             <button>
-                Création du compte
+                <h5>Création du compte</h5>
             </button>
 
             <button>
-                Annuler
+                <h5>Annuler</h5>
             </button>
+            
+                </form>
+            </fieldset>
+
         </div>
         </section>
     </main>
