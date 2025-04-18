@@ -97,7 +97,8 @@ let creationCompte = document.getElementById("creationBouton");
 let annuler = document.getElementById("annulerBouton");
 
 creationCompte.addEventListener("input", function() {
-  if ('click' = "connection.html") {
+  if ('click' = "./connection.html") {
     
   }
 })
+

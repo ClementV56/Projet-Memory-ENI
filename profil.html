@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil - Memory - ENI</title>
     <link rel="stylesheet" href="profil.css">
+    <script defer src="profil.js"></script>
+
 
 </head>
 <body>
@@ -28,7 +30,10 @@
     <main>
         
           <section id="cadreProfil">
-            <h3>Profil.</h3>
+            <h3>Profil</h3>
+            <img src="ressources1/question.svg" alt="" id="image_profil" title="Point d'interrogation">
+            
+            <fieldset>
             <h4>Nom d'utilisateur</h4>
             <input type="text" id="nom" name="nom" autofocus required placeholder="Votre nom d'utilisateur" pattern="[A-Za-z]{3,}" title="Saisissez votre nom utilisateur">
             
@@ -41,31 +46,31 @@
             <br>
             <br>
 
+            </fieldset>
+
             <h4>Choix du Memory</h4>
-            <input type="text" list="listeChoix" name="liste" id="liste">
-            <datalist id="listeChoix">
-                <option value="Memory01" selected>Animaux animés</option>
-                <option value="Memory02">Memory 2</option>
+        
+            <select id="listeChoix">
+                <option value="Memory01" id="AlphabetScrabble" selected>Animaux animés</option>
+                <option value="Memory02"id="Animaux">Memory 2</option>
                 <option value="Memory03">Memory 3</option>
                 <option value="Memory04">Memory 4</option>
-            </datalist>
+            </select>
 
-            <img src="" alt="">
+            <img src="ressources1/animaux/memory_detail_animaux.png" alt="Choix du memory" id="imageProfilMemory" title="Image des animaux du memory">
 
             <br>
             <br>
 
             <h4>Taille du Memory</h4>
-            <input type="text" list="listeTaille" name="liste" id="liste">
-            <datalist id="listeTaille">
+    
+            <select id="listeTaille">
                 <option value="Taille01" selected>4*3</option>
                 <option value="Taille02">13*9</option>
                 <option value="Taille03">Taille03</option>
                 <option value="Taille04">Taille04</option>
-            </datalist>
+            </select>
            
-            <br>
-            <br>
             <br>
             <br>
 
