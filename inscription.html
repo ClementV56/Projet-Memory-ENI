@@ -37,8 +37,8 @@
             <label for="nom"><h4>Nom d'utilisateur</h4></label>
             <input type="text" id="nom" name="nom" autofocus required placeholder="Votre nom" pattern="[A-Za-z]{3,}" title="Choisissez un pseudo contenant au moins 3 caractères.">
             <img src="ressources1/check.svg" alt="Coche Vert" id="checkNom" class="coche">
-            <img src="ressources1/error.svg" alt="Coche Rouge" id="errorNom" class="coche">
-            <ul id="nbCaracteres">Choisissez un pseudo contenant au moins 3 caractères.</li>
+            <!-- <img src="ressources1/error.svg" alt="Coche Rouge" id="errorNom" class="coche"> -->
+            <ul id="nbCaracteres">Choisissez un pseudo contenant au moins 3 caractères.</ul>
 
             </div>
 
@@ -47,9 +47,11 @@
 
             <div>
                 <label for="email"></label><h4>Entrez votre email</h4></label>
-                <input type="email" id="email" name="email" required placeholder="Votre email" title="Saisissez votre adresse email">
+                <input type="email" id="email" name="email" required placeholder="Votre email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Saisissez votre adresse email">
                 <img src="ressources1/check.svg" alt="Coche Vert" id="checkEmail" class="coche">
-                <img src="ressources1/error.svg" alt="Coche Rouge" id="errorEmail" class="coche">
+                <!-- <img src="ressources1/error.svg" alt="Coche Rouge" id="errorEmail" class="coche"> -->
+                <ul id="emailValid">Veuillez renseigner un email valide.</ul>
+
             </div>
 
             <br>
@@ -63,6 +65,17 @@
                 <img src="ressources1/error.svg" alt="Coche Rouge" id="errorPassword" class="coche">
                 <meter id="password-strength" min="0" max="4" value="0"></meter>
                 <p id="password-strength-text"></p>
+
+                <section id="barresCouleurs">
+
+                    <div class="barre">
+                        <div class="couleur1">Très faible</div>
+                        <div class="couleur2">Faible</div>
+                        <div class="couleur3">Moyenne</div>
+                        <div class="couleur4">Forte</div>
+                        <div class="couleur5">Très forte</div>
+                     </div>
+                </section>
             </div>
 
             <br>
@@ -81,20 +94,22 @@
             <br>
             <br>
 
-        <div class="boutons">
+            <div class="boutons">
 
-            <button>
+                <button id="creationBouton">
                 <h5>Création du compte</h5>
-            </button>
+                </button>
 
-            <button>
+                <button id="annulerBouton">
                 <h5>Annuler</h5>
-            </button>
+                </button>
             
                 </form>
-            </fieldset>
+            </div>
 
-        </div>
+        </fieldset>
+
+        
         </section>
     </main>
 

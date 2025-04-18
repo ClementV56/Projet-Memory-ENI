@@ -12,6 +12,11 @@ h3 {
   color: white;
 }
 
+
+
+
+/* Partie Menu */
+
 #menu {
   background: #7a1212;
   height: 45px;
@@ -107,6 +112,10 @@ h3 {
   }
 }
 
+
+
+/* Partie cadre central */
+
 #cadreInscrire {
   border-style: none;
   background-color: #2935a1;
@@ -171,9 +180,13 @@ fieldset {
     width: 25px;
   }
 
-  /* #nbCaracteres{
-	color: red;
-} */
+  #nbCaracteres{
+	color: white;
+}
+
+  #emailValid{
+    color: white;
+}
 }
 
 
@@ -218,3 +231,49 @@ meter[value="4"] {
   font-size: 0.9em;
   margin-top: 5px;
 }
+
+
+#barresCouleurs{
+  .barre {
+  width:500px;
+  display:flex;
+}
+.couleur1 {
+  width:20%;
+  height:20px;
+  background-color:red;
+  z-index: 1;
+  position: relative;
+  visibility: none;
+}
+.couleur2 {
+  width:40%;
+  height:20px;
+  background-color:orange;
+  z-index: 2;
+  position: relative;
+}
+
+.couleur3 {
+ width:60%;
+  height:20px;
+  background-color:yellow;
+  z-index: 3;
+  position: relative;
+}
+.couleur4 {
+ width:80%;
+  height:20px;
+  background-color:rgba(136, 209, 27, 0.863);
+  z-index: 4;
+  position: relative;
+}
+.couleur5 {
+ width:100%;
+  height:20px;
+  background-color:green;
+  z-index: 5;
+  position: relative;
+}
+}
+

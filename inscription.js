@@ -1,62 +1,3 @@
-// function checkNom() {
-//   let nom = document.getElementById("nom").value;
-
-//   let nomLen = checkNomLength(nom);
-
-//   if (nomLen) {
-//     document.getElementById("checkNom").disabled = false;
-//     document.getElementById("errorNom").disabled = true;
-//   } else {
-//     document.getElementById("checkNom").disabled = true;
-//     document.getElementById("errorNom").disabled = false;
-//   }
-// }
-
-// function checkNomLength(nom) {
-//   let isOk = nom.length >= 3;
-
-//   if (isOk) {
-
-//   } else {
-//     colorTextRed("nbCaracteres");
-//   }
-
-//   return isOk;
-// }
-
-// function colorTextGreen(id) {
-//   document.getElementById(id).style.color = "green";
-// }
-
-// function colorTextRed(id) {
-//   document.getElementById(id).style.color = "red";
-// }
-
-// function checkName() {
-
-//     let name = document.getElementById('name').value
-
-//     let pwdLen =checkPwdLength(name)
-//     let pwdNum =checkPwdNumber(name)
-//     let pwdMin =checkPwdMinus(name)
-//     let pwdMax =checkPwdMaxus(name)
-
-//     if (nameLen && nameNum && nameMin && nameMax) {
-//         document.getElementById('checkNom').disabled = false
-//         document.getElementById('errorNom').disabled = true
-//     }else{
-//         document.getElementById('checkNom').disabled = true
-//         document.getElementById('errorNom').disabled = false
-//     }
-// }
-
-// function isValidPassword(password) {
-//     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-//     return regex.test(password);
-// }
-
-// console.log(isValidPassword("Example123!"));
-
 
 function evaluatePasswordStrength(password) {
     let score = 0;
@@ -91,12 +32,72 @@ function evaluatePasswordStrength(password) {
   });
   
 
-  
-// function name(params) {
+function barresPassword () {
+  if (password.length) {
     
-// }
+  }
+}
+
+//Création pseudo
+//Intéraction avec l'image et le texte
+let imageNom = document.getElementById("checkNom");
+let textNom = document.getElementById("nbCaracteres");
+let nom = document.getElementById("nom");
+console.log(nom);
+
+//Changer d'image à la saisie et couleur du texte
+nom.addEventListener("input", function () {
+  if (nom.value === ""){
+    textNom.setAttribute("hidden", true);
+    imageNom = document.setAttribute("hidden", true);
+  } else if (nom.value.length < 3){
+    imageNom.removeAttribute("hidden");
+    imageNom.src = "ressources1/error.svg";
+    imageNom.alt = "incorrect";
+    textNom.removeAttribute("hidden");
+    textNom.style.color = "red";
+  }else if (nom.value.length > 3){
+    imageNom.removeAttribute("hidden");
+    imageNom.src = "ressources1/check.svg";
+    imageNom.alt = "correct";
+    textNom.removeAttribute("hidden");
+    textNom.style.color = "green"
+  }
+})
 
 
-//faire apparaitre coches
-//   display none
-//   display block/content
+// // Email valide
+// let imageEmail = document.getElementById("checkEmail");
+// let textEmail = document.getElementById("emailValid");
+// let email = document.getElementById("email");
+// console.log(email);
+
+// //Changer d'image à la saisie et couleur du texte
+// email.addEventListener("input", function () {
+//   if (email.value === ""){
+//     textEmail.setAttribute("hidden", true);
+//     imageEmail = document.setAttribute("hidden", true);
+//   } else if (email.pattern.length = 0){
+//     imageEmail.removeAttribute("hidden");
+//     imageEmail.src = "ressources1/error.svg";
+//     imageEmail.alt = "incorrect";
+//     textEmail.removeAttribute("hidden");
+//     textEmail.style.color == "red";
+//   }else if (email.pattern = ){
+//     imageEmail.removeAttribute("hidden");
+//     imageEmail.src = "ressources1/check.svg";
+//     imageEmail.alt = "correct";
+//     textEmail.removeAttribute("hidden");
+//     textEmail.style.color = "green"
+//   }
+// })
+
+
+let creationCompte = document.getElementById("creationBouton");
+let annuler = document.getElementById("annulerBouton");
+
+creationCompte.addEventListener("input", function() {
+  if ('click' = "connection.html") {
+    
+  }
+})

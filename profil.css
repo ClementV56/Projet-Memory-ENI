@@ -93,3 +93,18 @@ h1 {
 	align-items: center;
 	text-align: left;
 }
+
+section{
+	color: white;
+}
+
+h3{
+	text-align: center;
+}
+
+#buttonEnregistrer {
+	position: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
